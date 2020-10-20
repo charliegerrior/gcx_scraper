@@ -152,8 +152,11 @@ def createDbOffer(offer):
     except:
         raise
 
-def main():
-  getRedditStream()
+def lambda_handler(event, context):
+    getRedditStream()
 
-if __name__ == "__main__":
-    main()
+#def main():
+#  getRedditStream()
+
+#if __name__ == "__main__":
+#    main()
