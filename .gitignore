@@ -4,3 +4,4 @@ app/__pycache__/
 venv/
 function.zip
 .DS_Store
+.env

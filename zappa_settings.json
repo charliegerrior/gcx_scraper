@@ -1,0 +1,9 @@
+{
+    "production": {
+        "app_function": "reddit",
+        "profile_name": "default",
+        "project_name": "scraper",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-3orb6kxv6"
+    }
+}

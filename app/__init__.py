@@ -14,9 +14,11 @@ from app import models
 
 if not app.debug:
     if app.config['LOG_TO_STDOUT']:
-        stream_handler = logging.StreamHandler()
-        stream_handler.setLevel(logging.INFO)
-        app.logger.addHandler(stream_handler)
+        #stream_handler = logging.StreamHandler()
+        #stream_handler.setLevel(logging.INFO)
+        #app.logger.addHandler(stream_handler)
+        app.logger = logging.getLogger()
+        app.logger.setLevel(logging.INFO)
     else:
         if not os.path.exists('logs'):
             os.mkdir('logs')
